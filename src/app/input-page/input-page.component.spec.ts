@@ -10,8 +10,8 @@ describe('InputPageComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [InputPageComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(InputPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

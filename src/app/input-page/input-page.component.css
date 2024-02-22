@@ -1,0 +1,52 @@
+.container {
+  width: 30%;
+  margin-left: 37%;
+  display: flex;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+.img-fluid {
+  height: 200px;
+  width: 200px;
+}
+
+.form-control{
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+label{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: seagreen;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  border-radius: 2px;
+  text-align: center !important;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color:seagreen;
+  border:2px solid seagreen;
+}
+
+.radio{
+  padding-top: 5px;
+}

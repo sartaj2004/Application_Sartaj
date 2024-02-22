@@ -1,1 +1,59 @@
-<p>input-page works!</p>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Page</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="left-column">
+    <img src="assets/image1.jpg" class="img-fluid" alt="Image">
+  </div>
+  <div class="right-column">
+    <h2>Enter Personal Information</h2>
+    <form (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" class="form-control" id="firstName" [(ngModel)]="personalInfo.firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" class="form-control" id="lastName" [(ngModel)]="personalInfo.lastName" name="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="employmentTerm">Employment Term:</label><br>
+        <select class="form-control" id="employmentTerm" [(ngModel)]="personalInfo.employmentTerm" name="employmentTerm" required>
+          <option value="Full-time">Full-time</option>
+          <option value="Part-time">Part-time</option>
+          <option value="Partial load">Partial load</option>
+          <option value="Sessional">Sessional</option>
+        </select>
+      </div>
+      <!-- If you want to use radio buttons instead of a select dropdown, uncomment the following section -->
+      <!-- <div class="form-group">
+        <label>Employment Term:</label><br>
+        <div class="radio">
+          <label><input type="radio" [(ngModel)]="personalInfo.employmentTerm" name="employmentTerm" value="Full-time"> Full-time</label><br>
+        </div>
+        <div class="radio">
+          <label><input type="radio" [(ngModel)]="personalInfo.employmentTerm" name="employmentTerm" value="Part-time"> Part-time</label><br>
+        </div>
+        <div class="radio">
+          <label><input type="radio" [(ngModel)]="personalInfo.employmentTerm" name="employmentTerm" value="Partial load"> Partial load</label><br>
+        </div>
+        <div class="radio">
+          <label><input type="radio" [(ngModel)]="personalInfo.employmentTerm" name="employmentTerm" value="Sessional"> Sessional</label><br>
+        </div>
+      </div> -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
+
