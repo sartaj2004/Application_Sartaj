@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { InputPageComponent } from './input-page/input-page.component';
-import { OuputPageComponent } from './ouput-page/ouput-page.component';
+import { OutputPageComponent } from './output-page/output-page.component';
 
 @NgModule({
   declarations: [
@@ -14,15 +15,14 @@ import { OuputPageComponent } from './ouput-page/ouput-page.component';
     HeaderComponent,
     FooterComponent,
     InputPageComponent,
-    OuputPageComponent
+    OutputPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
